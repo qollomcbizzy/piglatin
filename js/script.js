@@ -8,6 +8,10 @@ var isVowel = function(x){
   else if(x.match(/[a-u]/) && x.length === 1){
   return x+"ay";
    }
+   //checks first if a word starts with alphabet
+   else if(x.charAt(0).match(/[a-z]/)){
+     return true;
+   }
    else{
      return false;
    }
