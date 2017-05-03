@@ -1,8 +1,13 @@
 
 var isVowel = function(x){
+  //checks if the number is a non alphanumeric
   if(x.match(/[0-9]/)){
     return x;
   }
+  //checks if the first single-letter is a vowell and ass 'ay' to it
+  else if(x.match(/[a-u]/)){
+  return x+"ay";
+   }
    else{
      return false;
    }
