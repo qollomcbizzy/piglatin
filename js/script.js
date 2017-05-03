@@ -5,11 +5,11 @@ var isVowel = function(x){
     return x;
   }
   //checks if the first single-letter is a vowell and ass 'ay' to it
-  else if(x.match(/[a-u]/) && x.length === 1){
+  else if(x.match(/[aeiou]/) && x.length === 1){
   return x+"ay";
    }
-   //checks first if a word starts with alphabet
-   else if(x.charAt(0).match(/[a-z]/)){
+   //checks first if a word starts with consonant
+   else if(x.charAt(0).match(/[bcdfghjklmnpqrstvwxyz]/)){
      return true;
    }
    else{
