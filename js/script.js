@@ -5,7 +5,7 @@ var isVowel = function(x){
     return x;
   }
   //checks if the first single-letter is a vowell and ass 'ay' to it
-  else if(x.match(/[a-u]/)){
+  else if(x.match(/[a-u]/) && x.length === 1){
   return x+"ay";
    }
    else{
