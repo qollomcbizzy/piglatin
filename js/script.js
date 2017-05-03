@@ -1,7 +1,8 @@
+
 var isVowel = function(x){
-  if(x==="a",x==="e",x==="i",x==="o",x==="u"){
-  return true;
-   }
+  if(x.match(/[0-9]/)){
+    return x;
+  }
    else{
      return false;
    }
